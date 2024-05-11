@@ -1,0 +1,5 @@
+.cooking .container{
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
