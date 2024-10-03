@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import './Home.css'
-import Featured from '../../assets/chickenPiece.jpg'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import BlogItem from '../Blogs/BlogItem'
-import Menu from '../Store/PopularStoreItem'
-import PopularStoreItem from '../Store/PopularStoreItem';
 import {dishes, categories} from '../../../data';
 import { NavLink } from 'react-router-dom';
+import StoreItem from '../Store/StoreItem';
 
 export default function Home() {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -66,12 +64,12 @@ export default function Home() {
           })
         }
       </div>
-        <h3 className="sub-heading">our menu</h3>
-        <h1>today's specialty</h1>
+        <h3 className="sub-heading">Popular products</h3>
+        <h1>Explore trending items</h1>
         <div className="container">
           {
             dishes && dishes.map(item => {
-              return <PopularStoreItem data={{...item}} key={item.id} />
+              return <StoreItem data={{...item}} key={item.id} />
             })
           }
         </div>

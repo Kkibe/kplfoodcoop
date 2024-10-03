@@ -10,7 +10,6 @@ import Loader from './components/Loader/Loader';
 
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import Contact from './pages/Contact/Contact';
 
 import Profile from './pages/Profile/Profile';
 import EditProfile from './pages/Profile/EditProfile';
@@ -73,11 +72,7 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <About/>
-      },
-      {
-        path: "/contact-us",
-        element: <Contact />
-      },
+      }
     ]
   },
   {

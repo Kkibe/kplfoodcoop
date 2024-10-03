@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Image from '../../assets/chicken.jpg';
+import Image from '../../assets/watermelon.jpg';
 
 export default  function BlogItem() {
   const [visible, setVisible] = useState(false);
@@ -16,17 +16,15 @@ const readingTime = (articleText) => {
   
   
   return(
-    <div className="card blog">
+    <div className="card blog bg">
         <div className="image">
             <img src={Image} alt="" />
         </div>
         <div className="content">
             <div className="meta">
                 <span className='trailing'>{new Date().toDateString()}</span>
-                <div className="duration">{readingTime("Lorem ipsum")} min read</div>
             </div>
-            <a href="/blogs/id-here"><h3>Delicious chicken piece</h3></a>
-            <p>1 chicken piece with regular chips.</p>
+            <a href="/blogs/id-here"><h3>This is a blog post....</h3></a>
         </div>
     </div>)
 }

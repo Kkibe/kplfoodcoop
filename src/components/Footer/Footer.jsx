@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
-import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
@@ -8,32 +9,27 @@ export default function Footer() {
         <div className="container">
             <div className="wrapper">
                 <h3>Quick Links</h3>
-                <a href="#">home</a>
-                <a href="#">dishes</a>
-                <a href="#">about</a>
-                <a href="#">menu</a>
+                <a href="#">my cart</a>
+                <a href="#">get started</a>
+                <a href="#">what is kplfoodcoop?</a>
             </div>
             <div className="wrapper">
                 <h3>locations</h3>
-                <a href="#">Nairobi</a>
-                <a href="#">Ndumbuini</a>
-                <a href="#">Nairobi CBD</a>
+                <a href="#">Kangemi</a>
                 <a href="#">Uthiru</a>
+                <a href="#">Ndumbuini</a>
             </div>
             <div className="wrapper">
                 <h3>contact us</h3>
                 <a href="#">+254 797814027</a>
-                <a href="#">valleydishes@gmail.com</a>
+                <a href="#">kplfoodcoop@gmail.com</a>
                 <span>
-                    <a href=""><FaFacebook className='link' /></a>
                     <a href=""><FaWhatsapp className='link'/></a>
-                    <a href=""><FaPinterest className='link'/></a>
-                    <a href=""><FaTwitter className='link'/></a>
-                    <a href=""><FaInstagram className='link'/></a>
+                    <a href=""><FaXTwitter className='link'/></a>
                 </span>
             </div>
         </div>
-        <div className="credit">&copy; 2024 by <span>Valley Dishes</span></div>
+        <div className="credit"><span>&copy; 2024 by KPL FOOD COOP</span></div>
     </section>
   )
 }

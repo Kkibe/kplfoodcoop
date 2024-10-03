@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import './Single.css'
-import { FaMinus, FaXmark } from "react-icons/fa6";
-import { FaLess, FaPlus, FaShippingFast, FaStar, FaStarHalf } from 'react-icons/fa';
-import Image from '../../assets/categories/icon-vodka.webp';
-
+import { FaMinus} from "react-icons/fa6";
 import { dishes } from '../../../data';
 import StoreItem from '../../pages/Store/StoreItem';
 

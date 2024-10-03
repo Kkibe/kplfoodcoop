@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaShareAlt, FaShoppingBasket, FaStar } from 'react-icons/fa'
 import ShareModal from '../../components/ShareModal/ShareModal';
+import { FaExpand, FaEye, FaOpenid, FaScreenpal } from 'react-icons/fa6';
 
 export default  function StoreItem({data}) {
   const [visible, setVisible] = useState(false);
@@ -12,7 +13,7 @@ export default  function StoreItem({data}) {
           visible && <ShareModal visible={visible} setVisible={setVisible}/>
         }
               
-        <a className="icon heart"><FaShoppingBasket /></a>
+        <a className="icon heart"><FaEye /></a>
         
         <a className='icon share' onClick={() => setVisible(true)}><FaShareAlt /></a>
         <div className="image">
@@ -23,15 +24,9 @@ export default  function StoreItem({data}) {
                 <span className='trailing'><FaStar className='star'/>{data.stars}K</span>
                 <div className="duration">KSH {data.price}</div>
             </div> 
-            <h3>{data.title}</h3>
-            <p>{data.description}</p>
-            <p>
-              {
-                data.categories && data.categories.map(category =>{
-                  return <div className="hash">{category}</div>
-                })
-              }
-            </p>
+            <h3>{"Product title goes here"}</h3>
+            <p>Location: Kangemi</p>
+
             {
               inStore ? <a className="btn" onClick={() => setInStore(!inStore)}>remove</a> : <a className="add" onClick={() => setInStore(!inStore)}>+</a>
             }

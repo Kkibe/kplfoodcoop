@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Topnav.css';
-import { FaBars, FaHeart, FaSearch, FaShoppingCart, FaUtensils, FaWineBottle, FaWineGlass } from "react-icons/fa";
+import { FaBars, FaDelicious, FaHeart, FaSearch, FaShoppingCart, FaUtensils, FaWineBottle, FaWineGlass } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom';
 
@@ -41,13 +41,12 @@ export default function Topnav() {
   
   return (
     <header> 
-        <a href="/" className="logo"><FaWineGlass className='icon'/>LiquorsKE</a>
+        <a href="/" className="logo"><FaDelicious className='icon'/>KPLFOODCOOP</a>
         <nav>
             <NavLink to="/">Home</NavLink>
             <NavLink to="shop" >Store</NavLink>
             <NavLink to="blogs">Blog</NavLink>
             <NavLink to="about-us" end> About Us</NavLink>
-            <NavLink to="contact-us" end>Contact Us</NavLink>
         </nav>
         <div className="icons">
             <div className="icon" id='menu-bars' onClick={handleToggle}>

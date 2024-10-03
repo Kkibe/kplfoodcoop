@@ -13,7 +13,7 @@ export default function Review() {
             <div className="user">
                 <img src={Image} alt="" />
                 <div className="user-info">
-                    <h3>John deo</h3>
+                    <h3>John doe</h3>
                     <div className="stars">
                         <FaStar className='star'/>
                         <FaStar className='star'/>
@@ -29,8 +29,7 @@ export default function Review() {
     }
   return (
     <section className='review' id='review'>
-        <h3 className="sub-heading">customer's review</h3>
-        <h1 className='heading'>What they say</h1>
+        <h3 className="sub-heading">PositiveFeedback</h3>
         <div className="review-slider">
             <div className="wrapper">
                 <Item />

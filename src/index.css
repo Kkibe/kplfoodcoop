@@ -61,14 +61,15 @@ p{
 .btn{
     width: fit-content;
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #fff;
-    background: var(--black);
-    border-radius: .5rem;
+    background: var(--light-color);
     border-radius: 3.125rem;
     cursor: pointer;
-    padding: .8rem 3rem;
+    padding: .6rem 2rem;
     margin: .5rem .5rem;
+    display: flex;
+    width: fit-content;
 }  
 
 
@@ -198,8 +199,8 @@ p{
 
 
 section{
-    margin: .5rem 0;
-    padding: .5rem 1%;
+    margin: 1rem 1rem;
+    padding: 1rem 1%;
 }
 
 .container{
@@ -216,7 +217,6 @@ section{
 }
 
 .card{
-    background: #fff;
     border-radius: .5rem;
     border: .1rem solid rgba(0, 0, 0, .2);
     box-shadow: var(--box-shadow);
@@ -224,22 +224,18 @@ section{
     overflow: hidden;
 }
 
-.card .btn{
-    margin: 5px 10px;
-    display: flex;
-    width: fit-content;
+.card.bg{
+    border: none;
+    background: #eee;
+    box-shadow: none;
+    margin: 5px 5px;
 }
 
-.card .btn *{
-    height: 100%;
-    display: flex;
-    margin: 0 3px;
-}
 
 .card .image{
-    height: 25rem;
+    height: 22rem;
     width: 100%;
-    padding: 1rem;
+    padding: .5rem;
     overflow: hidden;
     position: relative;
     max-width: 900px;
@@ -257,17 +253,17 @@ section{
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    height: 5rem;
-    width: 5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     background: #fff;
     border-radius: 50%;
     color: var(--black);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1005;
+    z-index: 999;
 }
 .card .icon:hover{
     background: var(--green);
@@ -284,11 +280,11 @@ section{
 
 
 .card:hover .heart{
-    left: 1.5rem;
+    left: 1rem;
 }
 
 .card:hover .share{
-    right: 1.5rem;
+    right: 1rem;
 }
 
 .card .content{
@@ -322,7 +318,7 @@ section{
 }
 
 .card .content h3{
-    color: var(--black);
+    color: var(--light-color);
     font-size: 2.5rem;
     cursor: pointer;
 } 
